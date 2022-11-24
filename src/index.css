@@ -1,13 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'Morganite';
+  src: url('./assets/Morganite-Black.ttf');
+}
+/* @font-face{
+  font-family: 'Morganite';
+  src: url('./assets/Morganite-Bold.ttf');
+}
+@font-face{
+  font-family: 'Morganite';
+  src: url('./assets/Morganite-Book.ttf');
+}
+@font-face{
+  font-family: 'Morganite';
+  src: url('./assets/Morganite-Light.ttf');
+}
+@font-face{
+  font-family: 'Morganite';
+  src: url('./assets/Morganite-Medium.ttf');
+} */
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.customHTML h3{
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 700;
 }
