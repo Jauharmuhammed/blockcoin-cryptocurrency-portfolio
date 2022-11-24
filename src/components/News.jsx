@@ -2,6 +2,7 @@ import moment from "moment";
 import React, { useEffect, useState } from "react";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
+import Spinner from "./Spinner";
 
 const News = ({ simplified }) => {
   const [newsCategory, setNewsCategory] = useState("Cryptocurrency");
@@ -12,7 +13,7 @@ const News = ({ simplified }) => {
   const { data: cryptosList } = useGetCryptosQuery(100);
 
 
-  if (isFetching) return "Loading.....";
+  if (isFetching) return <Spinner/>
 
   const demoThumbnail =
     "https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News";

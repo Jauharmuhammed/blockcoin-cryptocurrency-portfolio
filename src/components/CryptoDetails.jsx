@@ -14,6 +14,7 @@ import {
   NumberOutlined,
   ThunderboltOutlined,
 } from "@ant-design/icons";
+import Spinner from "./Spinner";
 
 const CryptoDetails = () => {
   const { coinId } = useParams();
@@ -90,7 +91,7 @@ const CryptoDetails = () => {
     },
   ];
 
-  if (isFetching) return "Loading....";
+  if (isFetching) return <Spinner/>
 
   return (
     <div className="p-16">

@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 import { useGetCryptosQuery } from '../services/cryptoApi'
 import Cryptocurrencies from './Cryptocurrencies'
 import News from './News'
+import Spinner from './Spinner'
 
 const Home = () => {
   const {data, isFetching} = useGetCryptosQuery(12)
 
-  if(isFetching) return 'Loading.....'
+  if(isFetching) return <Spinner/>
 
   console.log(data);
   const stats = data?.data?.stats

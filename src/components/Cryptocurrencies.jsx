@@ -3,6 +3,7 @@ import millify from "millify";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useGetCryptosQuery } from "../services/cryptoApi";
+import Spinner from "./Spinner";
 
 const Cryptocurrencies = ({ simplified }) => {
   const count = simplified ? 12 : 100;
@@ -17,7 +18,7 @@ const Cryptocurrencies = ({ simplified }) => {
     setcryptos(filteredCryptos);
   }, [cryptosList, searchKey]);
 
-  if (isFetching) return "Loading......";
+  if (isFetching) return <Spinner/>
 
   return (
     <>
