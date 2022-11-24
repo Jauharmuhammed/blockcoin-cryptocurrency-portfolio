@@ -29,7 +29,8 @@ const News = ({ simplified }) => {
           </select>
         </div>
       )} */}
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-16 mb-16 pt-5">
+      <h1 className="text-center text-3xl font-semibold dark:text-gray-200 mb-4">Latest News</h1>
+      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-16 mb-16 pt-5 dark:text-gray-200">
         {cryptoNews?.value.map((news, index) => {
           return (
             <a href={news.url} key={index} target="_blank" rel="noreferrer">
@@ -59,7 +60,7 @@ const News = ({ simplified }) => {
                     />
                     <p>{news.provider[0]?.name}</p>
                   </div>
-                  <p className="text-gray-700 text-sm">
+                  <p className="text-gray-700 text-sm  dark:text-gray-400">
                     {moment(news.datePublished).startOf("ss").fromNow()}
                   </p>
                 </div>

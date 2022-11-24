@@ -94,7 +94,7 @@ const CryptoDetails = () => {
   if (isFetching) return <Spinner/>
 
   return (
-    <div className="p-16">
+    <div className="p-16 dark:text-gray-200">
       <div className="text-center">
         <img src={cryptoDetails.iconUrl} className='w-20 object-cover mx-auto' alt={`${cryptoDetails?.name} icon`} />
         <h1 className="text-2xl mt-2 font-semibold">{cryptoDetails?.name} <span className="font-normal">({cryptoDetails?.symbol})</span></h1>
