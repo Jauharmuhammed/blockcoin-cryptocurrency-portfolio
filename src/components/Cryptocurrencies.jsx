@@ -33,12 +33,12 @@ const Cryptocurrencies = ({ simplified }) => {
           />
         </div>
       )}
-      <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-16 mb-16 mt-6 dark:text-gray-200">
+      <div className="grid  grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 px-5 md:px-16 mb-16 mt-6 dark:text-gray-200">
         {cryptos?.map((obj) => {
           return (
             <Link key={obj.uuid} to={`/coins/${obj.uuid}`}>
               <div
-                className="border p-4 flex items-center gap-1 h-full hover:shadow-md"
+                className="border p-4 flex items-center gap-1 h-full hover:shadow-md "
               >
                   <img
                     className="w-12  object-cover"

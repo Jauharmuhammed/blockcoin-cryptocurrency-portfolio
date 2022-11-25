@@ -94,12 +94,12 @@ const CryptoDetails = () => {
   if (isFetching) return <Spinner/>
 
   return (
-    <div className="p-16 dark:text-gray-200">
+    <div className=" px-5  md:px-16 dark:text-gray-200 my-5 md:my-16">
       <div className="text-center">
         <img src={cryptoDetails.iconUrl} className='w-20 object-cover mx-auto' alt={`${cryptoDetails?.name} icon`} />
         <h1 className="text-2xl mt-2 font-semibold">{cryptoDetails?.name} <span className="font-normal">({cryptoDetails?.symbol})</span></h1>
       </div>
-      <div className="lg:w-2/3 mt-16 customHTML" >
+      <div className="w-full lg:w-2/3 lg:mx-auto mt-16 customHTML" >
         {/* dangerouslySetInnerHTML={{ __html: cryptoDetails.description }} */}
         <h3>What is {cryptoDetails.name}?</h3>
         {HTMLReactParser(cryptoDetails.description)}

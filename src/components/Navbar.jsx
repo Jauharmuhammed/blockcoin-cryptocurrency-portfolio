@@ -1,12 +1,11 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = ({darkMode, setDarkMode}) => {
   return (
-    <div className="flex justify-between p-4 md:px-16 md:py-4 bg-slate-100 dark:bg-slate-900 mb-10">
-      <div className="flex gap-5 items-center">
+    <div className="md:flex justify-between p-4 md:px-16 md:py-4 bg-slate-100 dark:bg-slate-900 md:mb-10">
+      <div className="flex gap-5 items-center justify-between md:justify-start">
         <Link to="/">
-          <h2 className="font-morganite text-5xl cursor-pointer dark:text-white">
+          <h2 className="font-morganite text-5xl cursor-pointer tracking-[1px] dark:text-white">
             block<span className="text-gray-500 dark:text-gray-400">coin</span>
           </h2>
         </Link>
@@ -25,7 +24,7 @@ const Navbar = ({darkMode, setDarkMode}) => {
           </svg>
         </div>
       </div>
-      <ul className="list-none flex gap-5 items-center">
+      <ul className="list-none hidden md:flex gap-5 items-center ">
         <Link to="/">
           <li className="text-slate-700 hover:text-slate-900 hover:pb-1 transition duration-300  dark:text-white ">
             Home

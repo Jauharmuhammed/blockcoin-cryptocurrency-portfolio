@@ -29,8 +29,8 @@ const News = ({ simplified }) => {
           </select>
         </div>
       )} */}
-      <h1 className="text-center text-3xl font-semibold dark:text-gray-200 mb-4">Latest News</h1>
-      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-16 mb-16 pt-5 dark:text-gray-200">
+      { !simplified && <h1 className="text-center mt-5 md:mt-0 text-3xl font-semibold dark:text-gray-200 mb-4">Latest News</h1>}
+      <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5  md:px-16 mb-16 pt-5 dark:text-gray-200">
         {cryptoNews?.value.map((news, index) => {
           return (
             <a href={news.url} key={index} target="_blank" rel="noreferrer">

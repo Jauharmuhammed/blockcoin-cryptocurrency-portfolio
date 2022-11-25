@@ -4,8 +4,8 @@ import { CopyrightCircleOutlined} from '@ant-design/icons'
 
 const Footer = () => {
   return (
-    <div className='w-100 text-center p-4  bg-slate-100 dark:bg-slate-900' >
-        <h2 className="font-morganite text-3xl cursor-pointer dark:text-white">
+    <div className='w-100 text-center p-4  bg-slate-100 dark:bg-slate-900 ' >
+        <h2 className="font-morganite text-3xl cursor-pointer dark:text-white tracking-[1px]">
             block<span className="text-gray-500 dark:text-gray-400">coin</span>
         </h2>
         
